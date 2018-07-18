@@ -49,6 +49,7 @@ function total() {
   for (let i = 0; i < cart.length; i++)
   {
     totalCost += parseInt(cart[i].itemPrice)
+    console.log(parseInt(cart[i].itemPrice))
   }
   return totalCost
 }
