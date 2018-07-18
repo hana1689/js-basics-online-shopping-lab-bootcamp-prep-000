@@ -48,8 +48,9 @@ function total() {
   var totalCost
   for (let i = 0; i < cart.length; i++)
   {
-    
+    totalCost += parseInt(cart[i].itemPrice)
   }
+  return totalCost
 }
 
 function removeFromCart(item) {
