@@ -53,8 +53,19 @@ function total() {
   return totalCost
 }
 
+function findIndex(cart, item)
+{
+  for(let i = 0; i < length; i++)
+  {
+    if(cart[i].itemName === item)
+    {
+      return i
+    }
+  }
+}
+
 function removeFromCart(item) {
-  var index = cart.findIndex(obj => obj.id === item);
+  var index = cart.indexOf(cart)
   var remove = cart.splice(index, 1)
   if (remove === -1)
     {
