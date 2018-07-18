@@ -45,6 +45,7 @@ function viewCart() {
 }
 
 function total() {
+  var totalCost
   for (let i = 0; i < cart.length; i++)
   {
     
