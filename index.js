@@ -25,11 +25,14 @@ function addToCart(item) {
 function viewCart() {
   if (cart.length === 0)
   {
-    return ""
+    return "Your shopping cart is empty."
   }
-  for (let i = 0; i < cart.length; i++)
+  else
   {
-    
+    for (let i = 0; i < cart.length; i++)
+      {
+        return `In your cart, you have ${cart[i]
+      }
   }
 }
 
