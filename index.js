@@ -1,4 +1,5 @@
 var cart = [];
+var object = {};
 
 function getCart() {
  return cart;
@@ -15,7 +16,6 @@ function getPrice()
 }
 
 function addToCart(item) {
-  var object = {};
   object.itemName = item
   object.itemPrice = getPrice()
   cart.push(object)
@@ -31,7 +31,7 @@ function viewCart() {
   {
     for (let i = 0; i < cart.length; i++)
       {
-        return `In your cart, you have ${cart[i]
+        return `In your cart, you have ${cart[i].itemName}, `
       }
   }
 }
