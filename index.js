@@ -45,12 +45,12 @@ function viewCart() {
 }
 
 function total() {
-  var totalCost
+  var totalCost = 0
   for (let i = 0; i < cart.length; i++)
   {
     totalCost += parseInt(cart[i].itemPrice)
-    console.log(parseInt(cart[i].itemPrice))
   }
+  console.log(totalCost)
   return totalCost
 }
 
