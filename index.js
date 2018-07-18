@@ -70,8 +70,7 @@ function findIndex(cart, item)
 }
 
 function removeFromCart(item) {
-  Boolean b = findIndex(cart, item)
-  if (b === false)
+  if (findIndex(cart, item) === false)
     {
       return "That item is not in your cart."
     }
