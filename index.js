@@ -15,9 +15,9 @@ function getPrice()
 }
 
 function addToCart(item) {
-  var object = {itemName: "", itemPrice:""}
-  object[itemName] = item
-  object[itemPrice] = getPrice()
+  var object = {};
+  object.itemName = item
+  object.itemPrice = getPrice()
   cart.push(object)
   return `${cart['itemName']} has been added to your cart.`
 }
