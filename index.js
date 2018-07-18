@@ -54,15 +54,14 @@ function total() {
 }
 
 function removeFromCart(item) {
+  console.log(cart.indexOf(item))
   var remove = cart.splice(cart.indexOf(item), 1)
   if (remove === -1)
     {
       return "That item is not in your cart."
     }
   else
-    {
-      return cart
-    }
+    return cart
 }
 
 function placeOrder(cardNumber) {
