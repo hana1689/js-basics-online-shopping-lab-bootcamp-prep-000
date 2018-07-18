@@ -19,7 +19,7 @@ function addToCart(item) {
   object.itemName = item
   object.itemPrice = getPrice()
   cart.push(object)
-  return `${cart.itemName} has been added to your cart.`
+  return `${cart[cart.length].itemName} has been added to your cart.`
 }
 
 function viewCart() {
