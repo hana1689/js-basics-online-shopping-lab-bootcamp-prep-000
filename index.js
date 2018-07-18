@@ -58,8 +58,12 @@ function removeFromCart(item) {
   var i = 0
   while(i < cart.length)
   {
-    if
+    if(cart[i].itemName === item)
+      cart.splice(i, 1)
+    else
+      i++
   }
+  
   var index = cart.indexOf(cart)
   var remove = cart.splice(index, 1)
   if (remove === -1)
