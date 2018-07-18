@@ -53,20 +53,25 @@ function total() {
   return totalCost
 }
 
-
-function removeFromCart(item) {
+function findIndex(cart, item)
+{
   var i = 0
   while(i < cart.length)
   {
     if(cart[i].itemName === item)
+    {
       cart.splice(i, 1)
+      return true
+    }
     else
       i++
   }
-  
-  var index = cart.indexOf(cart)
-  var remove = cart.splice(index, 1)
-  if (remove === -1)
+  return false
+}
+
+function removeFromCart(item) {
+  Boolean b = findIndex(cart, item)
+  if (b === false)
     {
       return "That item is not in your cart."
     }
