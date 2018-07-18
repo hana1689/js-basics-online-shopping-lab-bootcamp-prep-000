@@ -50,7 +50,6 @@ function total() {
   {
     totalCost += parseInt(cart[i].itemPrice)
   }
-  console.log(totalCost)
   return totalCost
 }
 
