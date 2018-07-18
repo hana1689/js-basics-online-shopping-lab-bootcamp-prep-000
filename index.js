@@ -23,6 +23,10 @@ function addToCart(item) {
 }
 
 function viewCart() {
+  if (cart.length === 0)
+  {
+    return ""
+  }
   for (let i = 0; i < cart.length; i++)
   {
     
